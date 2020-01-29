@@ -1,0 +1,72 @@
+program-1
+------------
+echo "hello all"
+
+---------
+program-2
+---------
+echo "enter the largest of 3 numbers"
+read n1 n2 n3
+
+if [ $n1 -gt $n2 ] && [ $n1 -gt $n3 ]
+then
+echo "greater number is $n1"
+elif [ $n2 -gt $n1 ] && [ $n2 -gt $n3 ]
+then
+echo "greater number is $n2"
+else
+echo "greater number is $n3"
+fi
+
+-------------
+program-3
+-------------
+echo "enter the day in week"
+read day
+
+case $day in
+        "mon") echo "it's monday"
+	;;
+        "tue") echo "it's tuesday"
+	;;
+        "wed") echo "it's wednesday"
+	;;
+        "thur") echo "it's thursday"
+	;;
+        "fri") echo "it's friday"
+	;;
+        "sat") echo "it's saturday"
+	;;
+        "sun") echo "it's sunday"
+	;;
+esac
+
+------------
+program-4
+------------
+echo "enter weather m or f"
+read gen
+
+if [ $gen -eq 1 ] || [ $gen -eq 2 ]
+then
+	echo "select if both are 30 below and greater than 20 "
+	read num
+		if [ $num -lt 20 ]
+		then 
+		echo "not eligable"
+		elif [ $num -gt 20 ] && [ $num -lt 30 ]
+		then
+		echo "eligable for marriage"
+		else
+		echo "wrong entry"
+		fi
+fi
+
+-----------
+program-5
+-----------
+
+
+-----------
+program-6
+-----------
