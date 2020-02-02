@@ -46,26 +46,36 @@ program-4
 ------------
 echo "enter weather m or f"
 read gen
-
-if [ $gen -eq 1 ] || [ $gen -eq 2 ]
+echo "select if both are 30 below and greater than 20 "
+read num
+if [ $gen = m ]&&[ $num -gt 20 ]&&[ $num -lt 30 ]
 then
-	echo "select if both are 30 below and greater than 20 "
-	read num
-		if [ $num -lt 20 ]
-		then 
-		echo "not eligable"
-		elif [ $num -gt 20 ] && [ $num -lt 30 ]
-		then
-		echo "eligable for marriage"
-		else
-		echo "wrong entry"
-		fi
+echo "eligable to marriage"
+elif [ $gen = m ]&&[ $num -lt 20 ]
+then
+echo "not eligable"
+elif [ $gen = f ]&&[ $num -gt 18 ]&&[ $num -lt 30 ]
+then
+echo "eligable to marriage"
+elif [ $gen = f ]&&[ $num -lt 18 ]
+then 
+echo "not eligable"
+else [ $num -gt 30 ]
+echo "not eligable"
 fi
 
 -----------
 program-5
 -----------
+echo "Enter the number: "
+read num
 
+if [ $( $num % 2 ) -eq 0 ]
+then
+echo "even"
+else
+echo "odd"
+fi
 
 -----------
 program-6
